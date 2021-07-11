@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register now</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .text-default{
+            color: #72c786;
+        }
+
+        .text-default:hover{
+            color: #00ff3c;
+        }
+
+        #register{
+            position: relative;
+            min-height: 200vh;
+            width: 100vw;
+        }
+
+        #submit-btn{
+            border-color: #28a745;
+            color: #28a745;
+        }
+
+        #submit-btn:hover{
+            background-color: #28a745;
+            color: whitesmoke;
+        }
+
+        #register form{
+            background-color: #00000075;
+            padding: 10% 2% ;
+            border-radius: 1%;
+        }
+
+        #register .register-form{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #register .register-bg{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            filter:blur(5px) brightness(1.5);        
+            background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("resources/img/register-bg.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        @media (max-width:575px) {
+
+            html{
+                font-size: 10px;
+            }
+
+            #register  input,
+            .input-group-prepend{
+                margin-bottom: 5px;
+            }
+
+        }
+
+        @media (max-width:425px){
+
+            
+            #register{
+                min-height: 150vh;
+            }
+
+            #register .register-bg{      
+                background:linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url("resources/img/register-bg-phn.jpg");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                filter:blur(5px) brightness(1);  
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- register section starts from here -->
+    <section id="register">
+        <div class="register-bg"></div>
+        <div class="container ">
+            <form action="#" method="post" enctype="multipart/form-data" class="col-10 text-white  register-form">
+                <div class="form-row d-flex align-items-center form-group">
+                    <div class="col-md-2 col-12 font-weight-bold ">Name :</div>
+                    <div class="col-md-5 col-sm-6 col-12 ">
+                        <!-- first name -->
+                        <input type="text" name="fname" placeholder="First name" class="form-control" required>
+                    </div>
+                    <!-- last name -->
+                    <div class="col-md-5 col-sm-6 col-12 "><input type="text" name="lname" placeholder="Last name" class="form-control" required></div>
+                </div>
+                
+                <div class="form-row d-flex align-items-center form-group">
+                    <div class="col-md-2 col-12 font-weight-bold ">Phone</div>
+                    <div class="col-md-5 col-sm-6 col-12  input-group ">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">+880</span>
+                        </div>
+                        <!-- phone 1 -->
+                        <input type="number" name="phone1" placeholder="Phone 1" class="form-control" required>
+                    </div>
+                    <div class="col-md-5 col-sm-6 col-12  input-group ">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">+880</span>
+                        </div>
+                        <!-- phone 2 -->
+                        <input type="number" name="phone2" placeholder="Phone 2 " class="form-control">
+                    </div>
+                    <small class="form-text  text-info col-8 m-auto">Entering first number is required *</small>             
+                </div>
+                
+                <div class="form-row d-flex align-items-center form-group">
+                    <!-- email -->
+                    <label for="address" class="col-12 col-md-2 font-weight-bold ">Email :</label>
+                    <div class="col-12 col-md-10"><input type="email" name="email" placeholder="Enter your Email" class="form-control"></div>
+                </div>
+                
+                <div class="form-row d-flex align-items-center form-group">
+                    <!-- address -->
+                    <label for="address" class="col-12 col-md-2 font-weight-bold ">Address :</label>
+                    <div class="col-12 col-md-10"><input type="text" name="address" placeholder="EX : Gopinathpur, Enayetpur, Sirajganj" class="form-control" requireds></div>
+                </div>
+                
+                
+                <div class="form-row d-flex align-items-center form-group ">
+                    <!-- Gender -->
+                    <div class="col-4 col-md-2 font-weight-bold">
+                        Gender :
+                    </div>
+                    <div class="col-8 col-md-4 font-weight-bold ">
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                    
+                    <!-- Age -->
+                    <div class="form-group col-12 col-md-6">
+                        <div class="form-group d-flex">
+                            <div class="col-2 col-md-2 font-weight-bold p-0">
+                                Age :
+                            </div>
+                            <div class="col-10 col-md-10 font-weight-bold p-0">
+                                <input type="number" name="age" class="form-control ">
+                            </div>
+                        </div>
+                        <small class="form-text  text-info ml-auto text-right">Your age must be above 16 year*</small> 
+                    </div>
+                </div>
+                
+                
+                
+                <div class="form-row d-flex align-items-center form-group ">
+                    <!-- blood group -->
+                    <div class="col-5 col-md-2 font-weight-bold">
+                        Blood group :
+                    </div>
+                    <div class="col-7 col-md-4 font-weight-bold px-3">
+                        <select class="form-control">
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Image -->
+                    <div class="form-group col-12 col-md-6 m-0 py-4">
+                        <div class="form-group d-flex m-0">
+                            <div class="col-5 col-md-5 font-weight-bold p-0">
+                                <label for="photo">Your Photo :</label>
+                            </div>
+                            <div class="col-7 col-md-7 font-weight-bold p-0 ">
+                                <input type="file" name="photo" id="photo" class="form-control-file text-right" placeholder=" ">
+                            </div>
+                        </div>
+                        <small class="form-text  text-info ml-auto text-right">Your photo should NOT be more than 2mb*</small> 
+                    </div>
+                </div>
+                
+                
+                <div class="form-row d-flex align-items-center form-group">
+                    <!-- password -->
+                    <label for="address" class="col-12 col-md-3 font-weight-bold ">Password :</label>
+                    <div class="col-md-8  col-12  input-group ">
+                        <!-- password -->
+                        <input type="password" name="password" placeholder="Your password" class="form-control password">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1" onclick="showPass(0)"><i class="fa fa-eye-slash" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row d-flex align-items-center form-group">
+                    <!--confirm password -->
+                    <label for="address" class="col-12 col-md-3 font-weight-bold ">Confirm Password :</label>
+                    <div class="col-md-8  col-12  input-group ">
+                        <!--confirm password -->
+                        <input type="password" name="confirmpass" placeholder="Re-write your password" class="form-control password" >
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1" onclick="showPass(1)"><i class="fa fa-eye-slash" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <input type="submit" name="submit" value="Register Now" class=" btn btn-lg btn-outline-danger m-auto d-block" id="submit-btn">
+                
+                
+                <!-- already have an account -->
+                <div class="d-flex mt-5">           
+                    <span>Already have an account? <a href="login.php" class="text-default">Login now</a></span>                 
+                </div>
+                
+            </form>
+            
+        </div>
+    </section>
+
+
+    <script>
+        //script for password show 
+        function showPass(x){
+           var pass =  document.querySelectorAll(".password");
+            if(pass[x].type =="password"){
+                pass[x].type = " text";
+            }else{
+                pass[x].type = "password" ;
+            }
+        }
+    </script>
+</body>
+</html>

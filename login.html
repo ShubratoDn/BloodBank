@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" href="resources/login.css">
+    <title>Login Now!</title>
+</head>
+<body>
+    <section id="login">
+        <div class="container">
+            <div class="login-form col-lg-3 col-md-5 col-sm-6 col-10">
+                <div>
+                    <img src="resources/img/login-profile.svg" alt="" class="profile-img">
+                </div>
+                <h2 class="text-center">WELCOME</h2>
+                <form action="" method="post">
+                    <div class="error-msg">
+                        <!-- <div class="alert-danger px-2 rounded"><strong>input wong</strong></div> -->
+                    </div>
+
+                    <div class="input-div">
+                        <div class="input-logo">
+                            <i class=" fa fa-user"></i>
+                        </div>
+                        <input type="text" class="form-input" name="email_num" placeholder="Email or Phone">
+                    </div>
+
+                    <div class="input-div">
+                        <div class="input-logo">
+                            <i class=" fa fa-lock"></i>
+                        </div>
+                        <input type="text" class="form-input" name="password" placeholder="Password">
+                    </div>
+
+                    <p><a href="#" class="forget-pass"><small>Forgot Password?</small></a></p>
+
+                    <div>
+                        <div class=" buttonx">
+                            <input type="submit" name="submit" class="submit-btn" value="Log in">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="register-now">
+                    <small><p>Don't have an account? <a href="register.php" class=" text-primary"> Register now</a></p></small>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

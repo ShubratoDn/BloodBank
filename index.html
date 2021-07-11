@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank</title>
+
+    <!-- vendor style -->
+    <!-- normalize -->
+    <link rel="stylesheet" href="vendor/css/normalize.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Open+Sans&family=Tourney:wght@200&display=swap" rel="stylesheet">
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="vendor/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--animated headline css -->
+    <link rel="stylesheet" href="vendor/css/animateHeader.css">
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+</head>
+<body>
+    <!-- header starts -->
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a href="#" class="nav-logo col-lg-3">
+                    <img src="resources/img/logo.png" alt="logo" class="logo">
+                    <div class="logo-text">
+                        Blood Bank
+                    </div>
+                </a>
+
+                <i class=" fa fa-bars nav-collapse text-white" onclick="openNav()">&copy;</i>
+
+                <div class="nav-items col-lg-9">
+                    <button  class="nav-exit d-none btn border-0" onclick="closeNav()">&times;</button>
+                    <a href="#" class="nav-btn active">Home</a>
+                    <a href="#" class="nav-btn">
+                        <div class="dropdown">
+                            <div class="dropdown-btn prevent-listener" onclick="dropdown()">
+                                Blood Group <i class=" fa fa-angle-down dropdown-icon"></i>
+                            </div>
+                            <div class="dropdown-items">
+                                <a href="#" class=" dropdown-item">A+</a>
+                                <a href="#" class=" dropdown-item">A-</a>
+                                <a href="#" class=" dropdown-item">B+</a>
+                                <a href="#" class=" dropdown-item">B-</a>
+                                <a href="#" class=" dropdown-item">AB+</a>
+                                <a href="#" class=" dropdown-item">AB-</a>
+                                <a href="#" class=" dropdown-item">O+</a>
+                                <a href="#" class=" dropdown-item">O-</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#search-donor" class="nav-btn">Donor</a>
+                    <a href="#search-donor" class="nav-btn">Blood Needs</a>
+                    <a href="#search-donor" class="nav-btn">Contact</a>
+
+                    <div class="join col-lg-4 text-right m-0 p-0">
+                        <!-- <a href="#" class="nav-btn btn bg-red px-4 text-white">Login</a>
+                        <a href="#" class="nav-btn btn bg-red px-4 text-white">Registration</a> -->
+
+                        <div class="me">
+                            <img src="resources/img/profile.svg" alt="profile" title="My Profile" class="profile">
+                            <a href="#" class=" prevent-listener profile-info" onclick="preventListener(1)">My Name</a>
+
+                            <div class="profile-collapse">
+                                <p><a href="#" class=" profile-collapse-item">Update Profile</a></p>
+                                <p><a href="#" class=" profile-collapse-item">Logout</a></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- landing page section starts from here -->
+        <section id="landing-page">
+            <div class="overlay">
+            </div>
+
+            <!-- landing page content -->
+            <div class="container pt-5">
+                <div class="row d-flex align-items-center ">
+                    <div class="col-lg-7  pt-5">
+                        <!-- hero section starts  -->
+                        <div class="hero pt-5">
+                            <h1 class=" text-anton text-white">DONATING <span class=" text-red">BLOOD</span> CAN</h1>
+                            <!-- cd-intro -->                            
+                            <section class="cd-intro m-0 p-0">
+                                <h1 class="cd-headline letters type text-left text-dark">                                    
+                                    <span class="cd-words-wrapper waiting text-anton ">
+                                        <b class="is-visible">benefit  your  physical  health</b>
+                                        <b>helps in get rid of negative feelings</b>
+                                        <b>reduce stress</b>
+                                        <b>improve blood circulation</b>
+                                    </span>
+                                </h1>
+                            </section> 
+                            <!-- cd-intro -->
+                            <h2 class=" text-white text-anton pt-2">EVERY 2 SECONDS <span class=" text-red"> SOMEONE NEED BLOOD</span> </h2>
+                            <a href="#" class="hero-btn text-anton">Donate Blood</a>                            
+                        </div>
+                        <!-- hero section ends -->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </header>
+    <!--header  ends  -->
+
+    <!-- main Start -->
+    <main>
+        <section id="search-donor">
+            <div class="container">
+                <h1 class=" text-capitalize text-center" >
+                    Search a blood donor in your area
+                </h1>
+
+                <form action="#">
+                    <datalist id="blood-group">
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </datalist>
+                    <input type="text" list="blood-group" name="blood-group" id="blood-group" placeholder=" Choose Blood Group" required class=" form-control col-lg-6">
+                    <input type="submit" name="submit" id="" class=" btn btn-success btn-lg" >
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Main Ends -->
+
+    <!-- footer starts -->
+    <footer>
+        
+    </footer>
+    <!-- footer Ends -->
+
+    <!-- javascript -->
+    <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/popper.min.js"></script>
+    <script src="vendor/js/html5shiv.min.js"></script>
+    <script src="vendor/js/respond.min.js"></script>
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <!-- animated headline js-->
+    <script src="vendor/js/animateHeader.js"></script>
+
+    <script src="resources/js/main.js"></script>
+</body>
+</html>
