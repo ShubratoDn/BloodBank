@@ -15,8 +15,35 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .input-group input{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .owl-prev{
+        left: -5%;
+    }
+    
+    .owl-next{
+        right: -5%;
+    }
+}
 
 @media (max-width: 991px) {
+
+    .title{
+        font-family: 'Fredoka One', cursive;
+        text-transform: capitalize;
+        text-align: left;
+        margin-bottom: 5rem;
+        color: #343A40;
+    }
+    
+    .title-style{
+        font-size:120%;
+    }
 
     .nav-logo{
         width: 80%;
@@ -127,8 +154,36 @@
     .hero h2{
         font-size: 1.8rem;
     }
-    
 
+    /* blood seeker */
+    #need-blood{
+        padding: 10% 0;
+    }
+
+    .bs-card{
+        width: 22rem;
+        height: 18rem;
+    }
+
+    .bs-card-text h3, h4{
+        font-size: 90%;
+    }
+
+    .bs-card-text{
+        bottom: -60%;
+    }
+    /* blood seeker ends */
+
+}
+
+@media (max-width:850px) {
+    .owl-prev{
+        left: -5%;
+    }
+    
+    .owl-next{
+        right: -5%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -147,8 +202,102 @@
         font-weight: 100;
         border-radius: 1rem;
     }
-}
 
+    #search-donor .border-right{
+        border-right: none !important;
+        border-bottom:  0.2rem solid #f5050525 ;
+    }
+
+    .search-donor{
+        margin-bottom: 3rem;
+    }
+
+    #search-donor .req-blood{
+        margin-top: 3rem;
+    }
+
+
+    /* donor section */
+    .owl-prev,
+    .owl-next{
+        font-size: 3.5rem!important;
+        bottom: 0%;
+        transform: translateY(80%);
+    }
+
+    .owl-prev{
+        left: 40%;
+    }
+
+    .owl-next{
+        right: 40%;
+    }
+
+    /* card design starts */
+    .card{
+        width: 15rem;
+        height: 20rem;
+        margin: .5rem .5rem;
+        border-radius: .5rem;
+    }
+
+    .card-blood-group{
+        font-size: 100%;
+    }
+
+    .card-text h3{
+        font-size: 1.4rem;
+    }
+    
+    .card-text h4{
+        color: #343A40;
+        font-size: 1.2rem;
+    }
+    
+    /* card design Ends */
+
+    /* blood seeker */
+    #need-blood{
+        padding: 10% 0;
+    }
+
+    .bs-card{
+        width: 20rem;
+        height: 18rem;
+    }
+
+    .bs-card-text h3, h4{
+        font-size: 90%;
+    }
+
+    .bs-card-text{
+        bottom: -60%;
+    }
+    /* blood seeker ends */
+}
+/* width 767px ends */
+
+@media (max-width: 650px){
+    /* blood seeker */
+    #need-blood{
+        padding: 10% 0;
+    }
+
+    .bs-card{
+        width: 17rem;
+        height: 16rem;
+    }
+
+    .bs-card-text h3, h4{
+        font-size: 80%;
+    }
+
+    .bs-card-text{
+        bottom: -60%;
+    }
+    /* blood seeker ends */
+
+}
 
 @media (max-width: 550px) {
   .nav-collapse{
@@ -181,6 +330,26 @@
         font-weight: 100;
         border-radius: 1rem;
     }
+
+    /* blood seeker */
+    #need-blood{
+        padding: 10% 0;
+    }
+
+    .bs-card{
+        width: 16rem;
+        height: 15rem;
+    }
+
+    .bs-card-text h3, h4{
+        font-size: 70%;
+    }
+
+    .bs-card-text{
+        bottom: -60%;
+    }
+    /* blood seeker ends */
+
 }
 
 
@@ -188,25 +357,49 @@
     #landing-page{
         height: 70vh;
     }
-  
+
     .hero h1{
       font-size: 2.2rem;
       letter-spacing: initial;
-      }
+    }
   
+    .hero-f-h{
+        font-size: 3.5rem!important;
+    }
       .hero h2{
         font-size: 1.2rem;
       }
   
-      .hero-btn{
-          padding: 0.5rem 4rem;
-          font-size: 1.8rem;
-          font-weight: 100;
-          border-radius: 1rem;
-      }
+    .hero-btn{
+        padding: 0.5rem 3rem;
+        font-size: 1.8rem;
+        font-weight: 100;
+        border-radius: 1rem;
+    }
+
+    #need-blood{
+        padding: 30% 0;
+        background: linear-gradient(rgba(51, 51, 51, 0.5), rgba(0, 0, 0, 0.5)), url("../img/need-blood-phn-bg.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    .bs-card{
+        width: 18rem;
+        height: 15rem;
+    }
+
+    .bs-card-text{
+        bottom: -60%;
+    }
+
+    .bs-card-text h3, h4{
+        font-size: 70%;
+    }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
 
     #landing-page{
         height: 60vh;
@@ -215,16 +408,64 @@
     .hero h1{
         font-size: 2rem;
         letter-spacing: initial;
+    }
+    
+    .hero h2{
+        font-size: 1.2rem;
+    }
+
+    .hero-btn{
+        padding: 0.5rem 3rem;
+        font-size: 1.6rem;
+        font-weight: 100;
+        border-radius: 1rem;
+    }
+
+    .search-donor-btn{
+        width: 50%;
+        font-size: 2rem;
+    }
+
+        /* card design starts */
+           .card{
+            width: 13rem;
+            height: 18rem;
+            margin: .5rem .5rem;
+            border-radius: .5rem;
         }
     
-        .hero h2{
-          font-size: 1.2rem;
+        .card-blood-group{
+            font-size: 100%;
         }
     
-        .hero-btn{
-            padding: 0.5rem 4rem;
-            font-size: 1.6rem;
-            font-weight: 100;
-            border-radius: 1rem;
+        .card-text h3{
+            font-size: 1.2rem;
         }
+        
+        .card-text h4{
+            color: #343A40;
+            font-size: 1rem;
+        }
+        
+        /* card design Ends */
+
+    .title{
+        font-size: 120%;
+    } 
+    
+    /* blood seeker */
+    .bs-card{
+        width: 14rem;
+        height: 13.5rem;
+    }
+
+    .bs-card-text{
+        bottom: -60%;
+    }
+
+    .bs-card-text h3, h4{
+        font-size: 60%;
+    }
+
+
 }

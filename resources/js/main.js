@@ -1,3 +1,7 @@
+// FOR DATA AOS
+AOS.init();
+
+
 // // dropdown menu
 // var drpItems = document.querySelector("#dropdown-items");
 // function dropdown(){
@@ -52,3 +56,58 @@ prevenclass[1].addEventListener("click", function(e){
 // prevente listener FINISH
 
 
+// Owl carousel for Donor Sections
+$('#donor .owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:2
+        },
+        520:{
+            items:3
+        },
+        680:{
+            items:4
+        },
+        768:{
+            items:3
+        },
+        1024:{
+            items:4
+        },
+        1200:{
+            items:5
+        }
+    }
+});
+
+// carousel for need-blood section
+$('#need-blood .owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:2
+        },
+        520:{
+            items:3
+        },
+        680:{
+            items:3
+        },
+        768:{
+            items:3
+        },
+        1025:{
+            items:3
+        },
+        1200:{
+            items:4
+        }
+    }
+});

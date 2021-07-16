@@ -22,19 +22,39 @@ html{
 body{
     font-size: 1.6rem;
     background-color: #ffffff!important;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;    
 }
 
 /* ========================== */
 /*    Reuseable Components */
 /* ========================== */
+h1,h2,h3,h4,h5,h6{
+    color: rgb(52,58,64);
+}
+
+::selection{
+    color: #000000cb;
+    background: white;
+    text-shadow: 0px 0px 5px #ED1D25;
+}
+
 
 .text-anton{
     font-family: 'Anton', sans-serif;
 }
 
-.text-title{
+.title{
     font-family: 'Fredoka One', cursive;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 5rem;
+    color: #343A40;
+}
+
+.title-style{
+    border-bottom: .5rem solid #ED1D25;
+    margin: 1rem!important;
+    font-size:140%;
 }
 
 a{
@@ -45,11 +65,6 @@ a:hover{
     text-decoration: none;
 }
 
-.active{
-    color: #ED1D25;
-    box-shadow: 0 0 10rem #ed1d24f5;
-}
-
 .text-red{
     color: #ED1D25!important;
 }
@@ -57,6 +72,68 @@ a:hover{
 .bg-red{
     background-color: #ED1D25!important;
 }
+
+/* owl carousel */
+.owl-carousel{
+    position: relative;
+}
+
+.owl-prev,
+.owl-next{
+    position: absolute;
+    font-size: 6rem!important;
+    color: #ff10108c!important;
+    top: 40%;
+    transform: translateY(-50%);
+    outline: none!important;
+}
+
+.owl-prev{
+    left: -10%;
+}
+
+.owl-next{
+    right: -10%;
+}
+
+.owl-prev:hover{
+    color: #ff1010!important;
+}
+.owl-next:hover{
+    color: #ff1010!important;
+}
+
+/* owl carousel Ends */
+
+/* view all button */
+.view-all{
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 3rem;
+}
+
+.view-all:hover .view-all-link{
+    color: #ed1d24;
+}
+
+.view-all .view-all-link{
+    color: #007bff;
+    transition: .5s;
+}
+
+.view-all i{
+    color: #ed1d24;
+    transform: translateX(10%);
+    transition:all .5s, color .3s .2s;
+}
+
+.view-all:hover i{
+    color: #007bff;
+    transform: translateX(50%);
+}
+
+/* view all button */
+
 
 /* ========================== */
 /*    Header Starts */
@@ -69,12 +146,11 @@ a:hover{
     border-right: none;
     z-index: 999;
     box-shadow: 0px 0px 10rem rgba(247, 247, 247, 0.185);
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.1);
     width: 100vw;
     padding: 1rem;
     position: fixed;
     backdrop-filter: blur(1rem);
-    
 }
 
 .nav-logo{
@@ -109,6 +185,7 @@ a:hover{
     color: white;
     display: inline-block;
     font-size: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 10px 0;
     border: .1rem solid rgba(235, 235, 235, 0.336);
     padding: .8rem 2rem;
@@ -193,7 +270,7 @@ a:hover{
 
 .profile-info{
     position: relative;
-    color: white;
+    color: rgb(245, 245, 245);
     font-family: 'Fredoka One', cursive;
 }
 
@@ -325,4 +402,266 @@ b i{
 .hero-btn:hover{
     background-color: #0d0d0d8a;
     color: white;
+}
+
+/* ========================== */
+/*    SEARCH DONOR Starts */
+/* ========================== */
+
+#search-donor{
+    height: auto;
+    padding: 10% 0;
+    background:linear-gradient(rgba(180, 221, 243, 0.9), rgba(196, 196, 245, 0.9)), url("../img/search-donor-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.search-donor{
+    height: auto;
+}
+
+.input-group input{
+    font-size: 1.6rem;
+    width: auto;
+    margin: 1rem;
+    border: none;
+    padding: .5rem 1rem;
+    outline: none;
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid  rgb(0, 123, 255);
+    background: rgba(255, 255, 255, 0.212);
+}
+
+input::placeholder{
+    color: rgb(91, 74, 105);
+}
+
+.search-donor-title{
+    color: #343A40;
+}
+
+.search-donor-btn{
+    width: 30%;
+    font-size: 2rem;
+    border-radius: .3rem;
+    margin-top: 2.5rem!important;
+    display: inline-block;
+}
+
+#search-donor .border-right{
+    border-color: #f5050563!important;
+    border-width: .2rem!important;
+}
+
+
+
+/* ============================================ */
+/*           DONOR SECTION STARTS  */
+/* ============================================ */
+
+#donor{
+    min-height: 90vh;
+    
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../img/donor-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* card style */
+.eligible{
+    box-shadow: 0 0 15px  rgb(40, 167, 70);
+}
+
+.non-eligible{
+    box-shadow: 0 0 15px  rgb(237, 29, 36); 
+}
+
+.card{
+    width: 20rem;
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+    margin: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.card-blood-group{
+    position: absolute;
+    background-color: #ed1d24;
+    font-weight: bolder;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+    padding: 5%;
+    border-end-start-radius: 1rem;
+}
+
+.card-text{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    padding: 4%;
+    color: white;
+    transition: .4s;
+    transform: translateY(70%);
+}
+
+.card-text h3{
+    font-size: 1.6rem;
+}
+
+.card-text h4{
+    color: #343A40;
+    font-size: 1.4rem;
+}
+
+.card:hover .card-text{
+    transform: translateY(0%);
+}
+
+.card-phone{
+    text-decoration: underline;
+    text-decoration-color: #007bff;
+}
+
+.card-text h4{
+    color: rgb(108,117,125);
+}
+
+.card-link{
+    color:  #007bff;
+    transition: .3s;
+}
+
+.card-link:hover{
+    text-decoration: underline;
+}
+
+.card-link:hover .card-link-icon{
+    transform: translateX(.6rem);
+    transition: .3s;
+    
+}
+
+/* card style ends */
+
+
+/* ============================================ */
+/*           NEED BLOOD SECTION STARTS  */
+/* ============================================ */
+
+#need-blood{
+    padding: 10% 0;
+    overflow: hidden!important;
+    background: linear-gradient(rgba(51, 51, 51, 0.5), rgba(0, 0, 0, 0.5)), url("../img/need-blood-bg.jpg");
+    background-size: cover;
+    background-position: 0rem 10rem;
+    background-attachment: fixed;
+}
+
+.bs-card{
+    width: 25rem;
+    height: 23rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.342);
+}
+
+.bs-img{
+    transition: .5s;
+    width: 50%;
+    height: 58%;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 1px 2px 10px #ff000083,inset 10px 2px 30px #ed1d24cc;
+    margin-top: 3%;
+}
+
+.bs-card-text{
+    position: absolute;
+    padding: 3%;
+    width: 100%;
+    bottom: -48%;
+    transition: .5s;
+    background-color: rgba(236, 233, 233, 0.767);
+}
+
+.bs-card:hover .bs-card-text{
+    bottom: 0;
+}
+
+.bs-card:hover .bs-img{
+    width: 15%;
+    height: 18%;
+}
+
+.bs-card-blood-group{
+    position: absolute;
+    background-color: #ed1d24;
+    font-weight: bolder;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 90%;
+    padding: 3%;
+    border-end-start-radius: 1rem;
+}
+
+
+/* ============================================ */
+/*           FOOTER STARTS  */
+/* ============================================ */
+#footer{
+    background-color: rgb(27,27,27);
+}
+#footer h1{
+    color: white;
+    margin-bottom:2rem ;
+    text-transform: uppercase;
+}
+
+#footer  p{
+    color:  white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+#footer a{
+    color: white;
+}
+
+#footer a:hover{
+    color:  #ed1d24;
+}
+
+#footer .footer-end{
+    background-color: #111111;
+}
+
+#footer .social-links i{
+    font-size: 2.6rem;
+    padding: 0 2rem;
+}
+
+#footer .social-links i:hover{
+    color: #ed1d24;
+
 }
