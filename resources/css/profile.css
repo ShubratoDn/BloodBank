@@ -17,7 +17,7 @@
 #profile-detail th{
     background-color: #212529;
     color: white;
-    width: 25%;
+    width: 35%;
     padding: 1rem 2rem;
 }
 
@@ -109,7 +109,7 @@ tr:nth-child(odd) td{
 
 @media(max-width: 375px){
     #profile-detail th{
-        width: 25%;
+        width: 35%;
         padding: 1rem 1.2rem;
         font-size: 90%;
     }
