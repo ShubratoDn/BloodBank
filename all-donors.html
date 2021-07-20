@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Donor</title>
+
+    <!-- vendor style -->
+    <!-- normalize -->
+    <link rel="stylesheet" href="vendor/css/normalize.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Open+Sans&family=Tourney:wght@200&display=swap" rel="stylesheet">
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/css/font-awesome.min.css">
+    
+    <!--animated headline css -->
+    <link rel="stylesheet" href="vendor/css/animateHeader.css">
+
+    <!-- data-aos -->
+    <link rel="stylesheet" href="vendor/css/aos.css">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="vendor/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/css/owl.theme.default.css">
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+    <link rel="stylesheet" href="resources/css/nav,title.css">
+    <link rel="stylesheet" href="resources/css/all-donor.css">
+</head>
+<body>
+    <!-- header starts -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-logo col-lg-5">
+                    <img src="resources/img/logo.png" alt="logo" class="logo">
+                    <div class="logo-text">
+                        Blood Bank
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <!-- title -->
+        <section id="header-path">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-12">
+                        <p class=" text-white"><a href="index.html" class="text-white-50">Home</a> <span class=" text-red"> / </span> All Donor</p>
+                    </div>
+                </div>
+                <h1 class=" text-white page-descrip">All Donors List : </h1>
+            </div>
+        </section>
+    </header>
+    <!--header  ends  -->
+
+    <!-- main section stars -->
+    <main>
+        <section id="all-donor">
+            <div class="container">
+                <h2 class="my-5 div-title"><span class=" title-style">Filter Donor List by Blood Group :</span></h2>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="filter-buttons">
+                            <button class=" filter-btn" data-filter="all">All Donor</button>
+                            <button class=" filter-btn" data-filter=".eli">Eligible</button>
+                            <button class=" filter-btn" data-filter=".neli">Non-eligible</button>
+                            <button class=" filter-btn" data-filter=".Ap">A+</button>
+                            <button class=" filter-btn" data-filter=".An">A-</button>
+                            
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="filter-buttons">
+
+                            <button class=" filter-btn" data-filter=".Bp">B+</button>
+                            <button class=" filter-btn" data-filter=".Bn">B-</button>
+                            <button class=" filter-btn" data-filter=".ABp">AB+</button>
+                            <button class=" filter-btn" data-filter=".ABn">AB-</button>
+                            <button class=" filter-btn" data-filter=".Op">O+</button>
+                            <button class=" filter-btn" data-filter=".On">O-</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- filtering all donors -->
+                <div class="row filter-mixitup">
+                    <div class="mix Op eli col-6 col-sm-4 col-lg-3 py-5">
+                        <div class="card jumbotron p-0 eligible">
+                            <img src="resources/img/donor1.jpg" alt="Donor" class="card-img">
+                            <div class="card-blood-group">O+</div>
+                            <div class="card-text">
+                                <h3 class=" text-dark font-weight-bold">Shubrato Debnath</h3>
+                                <h4><b>Blood Group :</b> <span class=" text-red font-weight-bold">O+</span></h4>
+                                <br>
+                                <h4><b>Last donate :</b> 4 months ago</h4>
+                                <h4><b>Location :</b>Sirajganj</h4>
+                                <h4><b>Contact :</b> <a href="tel: 01759458961" class="card-phone">01759458691</a> <h4>
+                                <small><a href="#" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix On eli col-6 col-sm-4 col-lg-3 py-5">
+                        <div class="card jumbotron p-0 eligible item">
+                            <img src="resources/img/female.jpg" alt="Donor" class="card-img">
+                            <div class="card-blood-group">O-</div>
+                            <div class="card-text">
+                                <h3 class=" text-dark font-weight-bold">Rabeya Khatun</h3>
+                                <h4><b>Blood Group :</b> <span class=" text-red font-weight-bold">A-</span></h4>
+                                <br>
+                                <h4><b>Last donate :</b> 2 months ago</h4>
+                                <h4><b>Location :</b>Betil, sirajganj</h4>
+                                <h4><b>Contact :</b> <a href="tel: 0186612115" class="card-phone">0186612115</a> <h4>
+                                <small><a href="#" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix An eli col-6 col-sm-4 col-lg-3 py-5">
+                        <div class="card jumbotron p-0 eligible item">
+                            <img src="resources/img/female.jpg" alt="Donor" class="card-img">
+                            <div class="card-blood-group">A-</div>
+                            <div class="card-text">
+                                <h3 class=" text-dark font-weight-bold">Suborna Sen</h3>
+                                <h4><b>Blood Group :</b> <span class=" text-red font-weight-bold">A-</span></h4>
+                                <br>
+                                <h4><b>Last donate :</b> 8 months ago</h4>
+                                <h4><b>Location :</b>Betil, sirajganj</h4>
+                                <h4><b>Contact :</b> <a href="tel: 0186612115" class="card-phone">0186612115</a> <h4>
+                                <small><a href="#" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="mix Bp neli col-6 col-sm-4 col-lg-3 py-5">
+                        <div class="card jumbotron p-0 non-eligible item">
+                            <img src="resources/img/male.jpg" alt="Donor" class="card-img">
+                            <div class="card-blood-group">B+</div>
+                            <div class="card-text">
+                                <h3 class=" text-dark font-weight-bold">Tamim Iqbal</h3>
+                                <h4><b>Blood Group :</b> <span class=" text-red font-weight-bold">B+</span></h4>
+                                <br>
+                                <h4><b>Last donate :</b> 8 months ago</h4>
+                                <h4><b>Location :</b>Betil, sirajganj</h4>
+                                <h4><b>Contact :</b> <a href="tel: 0186612115" class="card-phone">0186612115</a> <h4>
+                                <small><a href="#" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix ABn eli col-6 col-sm-4 col-lg-3 py-5">
+                        <div class="card jumbotron p-0 eligible item">
+                            <img src="resources/img/male.jpg" alt="Donor" class="card-img">
+                            <div class="card-blood-group">AB-</div>
+                            <div class="card-text">
+                                <h3 class=" text-dark font-weight-bold">Abdul Karim</h3>
+                                <h4><b>Blood Group :</b> <span class=" text-red font-weight-bold">AB-</span></h4>
+                                <br>
+                                <h4><b>Last donate :</b> 8 months ago</h4>
+                                <h4><b>Location :</b>Betil, sirajganj</h4>
+                                <h4><b>Contact :</b> <a href="tel: 0186612115" class="card-phone">0186612115</a> <h4>
+                                <small><a href="#" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix Ap eli col-6 col-sm-4 col-lg-3 py-5">
+                        <div class="card jumbotron p-0 eligible item">
+                            <img src="resources/img/donor2.jpg" alt="Donor" class="card-img">
+                            <div class="card-blood-group">A+</div>
+                            <div class="card-text">
+                                <h3 class=" text-dark font-weight-bold">Anisul Islam</h3>
+                                <h4><b>Blood Group :</b> <span class=" text-red font-weight-bold">A+</span></h4>
+                                <br>
+                                <h4><b>Last donate :</b> 8 months ago</h4>
+                                <h4><b>Location :</b>taltola, Bogura</h4>
+                                <h4><b>Contact :</b> <a href="tel: 01753698444" class="card-phone">01753698444</a> <h4>
+                                <small><a href="#" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix Bn neli col-6 col-sm-4 col-lg-3 py-5">
+                        <div class="card jumbotron p-0 non-eligible item">
+                            <img src="resources/img/donor2.jpg" alt="Donor" class="card-img">
+                            <div class="card-blood-group">B-</div>
+                            <div class="card-text">
+                                <h3 class=" text-dark font-weight-bold">Amitab Bacchan</h3>
+                                <h4><b>Blood Group :</b> <span class=" text-red font-weight-bold">B-</span></h4>
+                                <br>
+                                <h4><b>Last donate :</b> 8 months ago</h4>
+                                <h4><b>Location :</b>taltola, Bogura</h4>
+                                <h4><b>Contact :</b> <a href="tel: 01753698444" class="card-phone">01753698444</a> <h4>
+                                <small><a href="#" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main section Ends -->
+
+
+
+    <!-- footer starts -->
+    <footer class="" id="footer"> 
+        <div class="container-md py-5">
+            <div class="row pt-5">
+                <!-- contact us -->
+                <div class="col-sm-4 p-3 mb-4">
+                    <h1>CONTACT US</h1>
+                    <p><i class=" fa fa-map-marker pr-3"></i><b>Headquerter : </b> Khwaja Yunus Ali Hospital, Enayetput, Sirajganj.</p>
+                    <p><i class=" fa fa-envelope pr-2"></i><b>Email : </b><a href="mailto: mycomputer44985@gmail.com" >mycomputer44985@gmail.com</a></p>
+                    <p><i class=" fa fa-phone pr-3"></i><b>Tel : </b><a href="tel: 01759458961" >01759458961</a></p>
+                </div>
+                <!-- services -->
+                <div class="col-sm-4 p-3 mb-4">
+                    <h1>Services</h1>
+                    <p><a href="#">Donate blood</a></p>
+                    <p><a href="#">Request blood</a></p>
+                    <p><a href="#">About Blood</a></p>
+                </div>
+                <!-- additional links -->
+                <div class="col-sm-4 p-3 mb-4">
+                    <h1>additional links</h1>
+                    <p><a href="#">About us</a></p>
+                    <p><a href="#">Terms and conditions</a></p>
+                    <p><a href="#">Privacy policy</a></p>
+                    <p><a href="#">Contact us</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end py-5">
+            <div class="container-md">
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-md-4 text-center text-md-left  mb-4">
+                        &copy; 2021 All Rights Reserved
+                    </div>                    
+                     <!-- social links -->
+                    <div class="col-md-4  social-links text-center mb-4">
+                        <i class=" fa fa-facebook"></i>
+                        <i class=" fa  fa-instagram"></i>
+                        <i class=" fa fa-twitter"></i>
+                    </div>
+                    <div class="col-md-4 text-md-right text-center mb-4">
+                        <p><b>Design by </b><span class=" text-red" style="cursor: pointer;">  Shubrato Debnath</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer Ends -->
+
+
+
+    <!-- javascript -->
+    <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/popper.min.js"></script>
+    <script src="vendor/js/html5shiv.min.js"></script>
+    <script src="vendor/js/respond.min.js"></script>
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <!-- animated headline js-->
+    <script src="vendor/js/animateHeader.js"></script>
+    <!-- data-aos-->
+    <script src="vendor/js/aos.js"></script>
+    <!-- owl carousel -->
+    <script src="vendor/js/owl.carousel.min.js"></script>
+    <!-- mixitup plugin for filter -->
+    <script src="vendor/js/mixitup.min.js"></script>
+
+
+    <!-- custom js -->
+    <script src="resources/js/main.js"></script>
+</body>
+</html>

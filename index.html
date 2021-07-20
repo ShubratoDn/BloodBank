@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Blood Bank">
+    <meta property="og:title" content="Blood Bank kyabb">
     <meta property="og:description" content="Donate Blood and Save Other Life">
     <meta property="og:image" content="resources/img/logo.png">
     <meta property="og:url" content="https://kyabb.com">
@@ -56,27 +56,27 @@
 
                 <div class="nav-items col-lg-9">
                     <button  class="nav-exit d-none btn border-0" onclick="closeNav()">&times;</button>
-                    <a href="#" class="nav-btn active">Home</a>
+                    <a href="index.html" class="nav-btn active">Home</a>
                     <a href="#" class="nav-btn">
                         <div class="dropdown">
-                            <div class="dropdown-btn prevent-listener" onclick="dropdown()">
+                            <div class="dropdown-btn prevent-listener" onclick="preventListener(event)">
                                 Blood Group <i class=" fa fa-angle-down dropdown-icon"></i>
                             </div>
                             <div class="dropdown-items">
-                                <a href="#" class=" dropdown-item">A+</a>
-                                <a href="#" class=" dropdown-item">A-</a>
-                                <a href="#" class=" dropdown-item">B+</a>
-                                <a href="#" class=" dropdown-item">B-</a>
-                                <a href="#" class=" dropdown-item">AB+</a>
-                                <a href="#" class=" dropdown-item">AB-</a>
-                                <a href="#" class=" dropdown-item">O+</a>
-                                <a href="#" class=" dropdown-item">O-</a>
+                                <a href="#search-donor" class=" dropdown-item">A+</a>
+                                <a href="#search-donor" class=" dropdown-item">A-</a>
+                                <a href="#search-donor" class=" dropdown-item">B+</a>
+                                <a href="#search-donor" class=" dropdown-item">B-</a>
+                                <a href="#search-donor" class=" dropdown-item">AB+</a>
+                                <a href="#search-donor" class=" dropdown-item">AB-</a>
+                                <a href="#search-donor" class=" dropdown-item">O+</a>
+                                <a href="#search-donor" class=" dropdown-item">O-</a>
                             </div>
                         </div>
                     </a>
-                    <a href="#search-donor" class="nav-btn">Donor</a>
-                    <a href="#search-donor" class="nav-btn">Blood Needs</a>
-                    <a href="#search-donor" class="nav-btn">Contact</a>
+                    <a href="#donor" class="nav-btn">Donor</a>
+                    <a href="#need-blood" class="nav-btn">Blood Needs</a>
+                    <a href="more.html" class="nav-btn">More</a>
 
                     <div class="join col-lg-4 text-right m-0 p-0">
                         <!-- <a href="#" class="nav-btn btn bg-red px-4 text-white">Login</a>
@@ -84,14 +84,14 @@
 
                         <div class="me">
                             <img src="resources/img/profile.svg" alt="profile" title="My Profile" class="profile">
-                            <a href="#" class=" prevent-listener profile-info" onclick="preventListener(1)">My Name</a>
+                            <a href="#" class=" prevent-listener profile-info" onclick="preventListener(event)">My Name</a>
 
                             <div class="profile-collapse">
+                                <p><a href="profile/profile.html" class=" profile-collapse-item">My Profile</a></p>
                                 <p><a href="#" class=" profile-collapse-item">Update Profile</a></p>
                                 <p><a href="#" class=" profile-collapse-item">Logout</a></p>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -283,7 +283,7 @@
 
                     <!--View all button-->
                     <div class="view-all">
-                        <a href="#" class="view-all-link">See All Donor <i class="fa fa-angle-double-right"></i></a>
+                        <a href="all-donors.html" class="view-all-link">See All Donor <i class="fa fa-angle-double-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -371,7 +371,7 @@
 
                 <!--View all button-->
                 <div class="view-all">
-                    <a href="#" class="view-all-link">See More <i class="fa fa-angle-double-right"></i></a>
+                    <a href="needs-blood.html" class="view-all-link">See More <i class="fa fa-angle-double-right"></i></a>
                 </div>
             </div>
         </section>
@@ -440,7 +440,12 @@
     <script src="vendor/js/aos.js"></script>
     <!-- owl carousel -->
     <script src="vendor/js/owl.carousel.min.js"></script>
+     <!-- mixitup plugin for filter -->
+     <script src="vendor/js/mixitup.min.js"></script>
 
+
+    <!-- custom js -->
     <script src="resources/js/main.js"></script>
+
 </body>
 </html>
