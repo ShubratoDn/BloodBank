@@ -17,7 +17,7 @@
 #profile-detail th{
     background-color: #212529;
     color: white;
-    width: 35%;
+    width: 25%;
     padding: 1rem 2rem;
 }
 
@@ -76,10 +76,10 @@ tr:nth-child(odd) td{
     padding: .5rem 1rem;
     border-radius: .5rem;
     color: rgb(0, 0, 0);
+    width: 80%;
 }
 
 #update-form  input:focus{
-
     color: red;
 }
 
@@ -87,11 +87,35 @@ tr:nth-child(odd) td{
     border: 1px solid rgb(197, 197, 197);
     padding: 1rem 1rem;
     border-radius: .5rem;
+    cursor: pointer;
 }
 
 #update-form .update-edit:active{
     background-color: #fff;
 }
+
+.update-btn{
+    background-color: #007BFF!important;
+    color: white!important;
+    display: block !important;
+    margin: 3rem auto!important;
+    padding: 1rem 10rem !important;
+    width: fit-content!important;
+}
+
+.update-btn:hover{
+    background-color: #0a64c5 !important;
+}
+
+#update-change-pic-in{
+    display: none;
+}
+
+#update-form ::placeholder{
+    color: rgba(100, 100, 100, 0.842);
+}
+
+
 
 
 @media(max-width: 425px){
@@ -101,23 +125,24 @@ tr:nth-child(odd) td{
     }
     
     #profile-detail td{
-        max-width: 65%;
+        max-width: 100%;
         font-size: 100%;
     }
     
+        
+    .update-user-detail .input-group input{
+        width: 70%!important;
+    }
 }
 
 @media(max-width: 375px){
     #profile-detail th{
-        width: 35%;
-        padding: 1rem 1.2rem;
+        width: 25%;
         font-size: 90%;
     }
     
     #profile-detail td{
-        padding: 1rem 2rem;
-        max-width: 65%;
         font-size: 80%;
     }
-    
+
 }

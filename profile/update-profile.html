@@ -56,10 +56,10 @@
             <div class="container py-4">
                 <div class="row">
                     <div class="col-12">
-                        <p class=" text-white"><a href="../index.html" class="text-white-50">Home</a> <span class=" text-red"> / </span> Profile</p>
+                        <p class=" text-white"><a href="../index.html" class="text-white-50">Home</a> <span class=" text-red"> / </span>Profile <span class=" text-red"> / </span>Update Profile</p>
                     </div>
                 </div>
-                <h1 class=" text-white page-descrip">My Profile : </h1>
+                <h1 class=" text-white page-descrip">Update Profile : </h1>
             </div>
         </section>
     </header>
@@ -81,15 +81,15 @@
                                 <img src="../resources/img/donor1.jpg" alt="#" class=" profile-pic img-fluid">
 
                                 <!-- change profile pic -->
-                                <div class="input-group my-5 justify-content-between">
+                                <div class="input-group my-5 justify-content-between align-items-center">
                                     Change Pic
-                                    <div class="input-group-prepend">
-                                      <div class="input-group-text"><i class=" fa fa-pencil fa-2x"></i></div>
+                                    <div>
+                                      <i class=" fa fa-pencil update-edit" onclick="inputEnable(0)"></i>
                                     </div>
                                 </div>
                                 <!-- file input -->
                                 <div class="input-group ">
-                                    <input type="file" name="" id="" class="w-100">
+                                    <input type="file" name="" id="update-change-pic-in" class="w-100">
                                 </div>
 
                             </div>
@@ -97,8 +97,8 @@
                         <div class="col-lg-9">
                             <!-- profile detaile starts -->
                             <div id="profile-detail">
-                                <table>
-                                    <tr><th class="table-first-row" colspan="3">User Datails</th></tr>
+                                <table class="update-user-detail">
+                                    <tr><th class="table-first-row" colspan="2">User Datails</th></tr>
                                     <tr>
                                         <th>User Id  </th>
                                         <td>101</td>
@@ -106,30 +106,29 @@
                                     <tr>
                                         <th>Name  </th>
                                         <td>
-                                            <input type="text" id="xx" value="Shubrato" placeholder="First Name" class=" mr-3" disabled>
-                                            <i class=" fa fa-pencil update-edit" onclick="inputEnable(1)"></i>                                            
-                                            <input type="text" value="" placeholder="First Name" class=" mr-3" disabled>       
-                                        </td>
-                                        <td>                                     
-                                            <i class=" fa fa-pencil update-edit" onclick="inputEnable(2)"></i>
+                                            <div class="input-group mb-2 d-flex justify-content-between">
+                                                <input type="text" name="" value="Shubrato" placeholder="First Name" class="mr-3" disabled>
+                                                <i class=" fa fa-pencil update-edit" onclick="inputEnable(1)"></i>
+                                            </div>
+
+                                            <div class="input-group d-flex justify-content-between">
+                                                <input type="text" name="" value="" placeholder="Last Name" class="mr-3" disabled>       
+                                                <i class=" fa fa-pencil update-edit" onclick="inputEnable(2)"></i>  
+                                            </div>
                                         </td>                                   
                                     </tr>
                                     <tr>
                                         <th>Gender  </th>
-                                        <td>
-                                            <input type="text" value="Male" placeholder="Gender" class=" mr-3 w-100" >    
-                                        </td>
-                                        <td>
-                                            <i class=" fa fa-pencil update-edit" onclick="inputEnable()"></i>
+                                        <td class=" d-flex justify-content-between">
+                                            <input type="text" name="" value="Male" placeholder="Gender"  disabled>    
+                                            <i class=" fa fa-pencil update-edit" onclick="inputEnable(3)"></i>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th>Age  </th>
-                                        <td>
-                                            <input type="text" value="21" placeholder="Age" class=" mr-3 w-100" >    
-                                        </td>
-                                        <td>
-                                            <i class=" fa fa-pencil update-edit" onclick="inputEnable()"></i>
+                                        <td class=" d-flex justify-content-between">
+                                            <input type="text" name="" value="21" placeholder="Age" disabled>    
+                                            <i class=" fa fa-pencil update-edit" onclick="inputEnable(4)"></i>
                                         </td>
                                     </tr>
                                     <tr>
@@ -142,27 +141,39 @@
                                     </tr>
                                     <tr>
                                         <th>Last Donate </th>
-                                        <td>19 uly, 2021</td>
+                                        <td>19 july, 2021</td>
                                     </tr>                                
                                     <tr>
                                         <th>Address  </th>
-                                        <td>Enayetpur</td>
+                                        <td class=" d-flex justify-content-between">
+                                            <input type="text" name="" value="Enayetpur" placeholder="Address" disabled>    
+                                            <i class=" fa fa-pencil update-edit" onclick="inputEnable(5)"></i>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>Phone 1  </th>
-                                        <td>01759458961</td>
+                                        <td class=" d-flex justify-content-between">
+                                            <input type="text" name="" value="01759458961" placeholder="Phone 1" disabled>    
+                                            <i class=" fa fa-pencil update-edit" onclick="inputEnable(6)"></i>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>Phone 2  </th>
-                                        <td></td>
+                                        <td class=" d-flex justify-content-between">
+                                            <input type="text" name="" value="" placeholder="Phone 2" disabled>    
+                                            <i class=" fa fa-pencil update-edit" onclick="inputEnable(7)"></i>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>Email  </th>
-                                        <td>mycomputer44985@gmail.com</td>
+                                        <td class=" d-flex justify-content-between">
+                                            <input type="text" name="" value="mycomputer44985@gmail.com" placeholder="email " disabled>    
+                                            <i class=" fa fa-pencil update-edit" onclick="inputEnable(8)"></i>
+                                        </td>
                                     </tr>
                                 </table>
     
-                                <a href="#" class=" profile-chng-pass-btn rounded">Change Password</a>
+                                <input type="submit" name="submit" value="Update" class="update-btn">
                             </div>  <!-- profile detaile Ends -->                    
                         </div>
                     </div>
@@ -170,7 +181,6 @@
 
                 </form>
                 <!-- update form Ends -->
-
                 
             </div>
         </section>
@@ -249,7 +259,12 @@
 
     <script>
         function inputEnable(x){
-            
+            var input = document.getElementsByTagName("input")[x];
+            if(x==0){
+                input.style.display = "block";
+            }else{
+                input.disabled = false;  
+            }
         };
     </script>
 </body>
