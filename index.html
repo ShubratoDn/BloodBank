@@ -10,6 +10,7 @@
     <meta property="og:url" content="https://kyabb.com">
     <title>Blood Bank</title>
     
+    <link rel="shortcut icon" href="resources/img/logo.png" type="image/x-icon">
     <!-- vendor style -->
     <!-- normalize -->
     <link rel="stylesheet" href="vendor/css/normalize.css">
@@ -45,7 +46,7 @@
     <header>
         <nav class="navbar">
             <div class="container-fluid">
-                <a href="#" class="nav-logo col-lg-3">
+                <a href="index.html" class="nav-logo col-lg-3">
                     <img src="resources/img/logo.png" alt="logo" class="logo">
                     <div class="logo-text">
                         Blood Bank
@@ -56,27 +57,27 @@
 
                 <div class="nav-items col-lg-9">
                     <button  class="nav-exit d-none btn border-0" onclick="closeNav()">&times;</button>
-                    <a href="index.html" class="nav-btn active">Home</a>
-                    <a href="#" class="nav-btn">
+                    <a onclick="closeNav()" href="index.html" class="nav-btn active">Home</a>
+                    <a href="#" class="nav-btn" onclick="preventListener(event)">
                         <div class="dropdown">
-                            <div class="dropdown-btn prevent-listener" onclick="preventListener(event)">
+                            <div class="dropdown-btn prevent-listener">
                                 Blood Group <i class=" fa fa-angle-down dropdown-icon"></i>
                             </div>
                             <div class="dropdown-items">
-                                <a href="#search-donor" class=" dropdown-item">A+</a>
-                                <a href="#search-donor" class=" dropdown-item">A-</a>
-                                <a href="#search-donor" class=" dropdown-item">B+</a>
-                                <a href="#search-donor" class=" dropdown-item">B-</a>
-                                <a href="#search-donor" class=" dropdown-item">AB+</a>
-                                <a href="#search-donor" class=" dropdown-item">AB-</a>
-                                <a href="#search-donor" class=" dropdown-item">O+</a>
-                                <a href="#search-donor" class=" dropdown-item">O-</a>
+                                <a onclick="closeNav()" href="#search-donor" class=" dropdown-item">A+</a>
+                                <a onclick="closeNav()" href="#search-donor" class=" dropdown-item">A-</a>
+                                <a onclick="closeNav()" href="#search-donor" class=" dropdown-item">B+</a>
+                                <a onclick="closeNav()" href="#search-donor" class=" dropdown-item">B-</a>
+                                <a onclick="closeNav()" href="#search-donor" class=" dropdown-item">AB+</a>
+                                <a onclick="closeNav()" href="#search-donor" class=" dropdown-item">AB-</a>
+                                <a onclick="closeNav()" href="#search-donor" class=" dropdown-item">O+</a>
+                                <a onclick="closeNav()" href="#search-donor" class=" dropdown-item">O-</a>
                             </div>
                         </div>
                     </a>
-                    <a href="#donor" class="nav-btn">Donor</a>
-                    <a href="#need-blood" class="nav-btn">Blood Needs</a>
-                    <a href="more.html" class="nav-btn">More</a>
+                    <a onclick="closeNav()" href="#donor" class="nav-btn">Donor</a>
+                    <a onclick="closeNav()" href="#need-blood" class="nav-btn">Blood Needs</a>
+                    <a onclick="closeNav()" href="more.html" class="nav-btn">More</a>
 
                     <div class="join col-lg-4 text-right m-0 p-0">
                         <!-- <a href="#" class="nav-btn btn bg-red px-4 text-white">Login</a>
@@ -84,11 +85,10 @@
 
                         <div class="me">
                             <img src="resources/img/profile.svg" alt="profile" title="My Profile" class="profile">
-                            <a href="#" class=" prevent-listener profile-info" onclick="preventListener(event)">My Name</a>
+                            <a href="#" class=" prevent-listener profile-name" onclick="preventListener(event)">My Name</a>
 
                             <div class="profile-collapse">
                                 <p><a href="profile/profile.html" class=" profile-collapse-item">My Profile</a></p>
-                                <p><a href="#" class=" profile-collapse-item">Update Profile</a></p>
                                 <p><a href="#" class=" profile-collapse-item">Logout</a></p>
                             </div>
                         </div>
@@ -184,7 +184,7 @@
                             <h1 class=" text-dark">
                                 Fill up a form to apply a request for <span class=" text-dark"> Blood Require</span>
                             </h1>
-                            <a href="#" class=" btn btn-primary d-block m-auto search-donor-btn">Fill form</a>
+                            <a href="req_blood.html" class=" btn btn-primary d-block m-auto search-donor-btn">Fill form</a>
                         </div>
                     </div>
                 </div>
@@ -211,7 +211,7 @@
                                 <h4><b>Last donate :</b> 4 months ago</h4>
                                 <h4><b>Location :</b>Sirajganj</h4>
                                 <h4><b>Contact :</b> <a href="tel: 01759458961" class="card-phone">01759458691</a> <h4>
-                                <small><a href="#" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
+                                <small><a href="profile/view_profile.html" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
                             </div>
                         </div>
                         <div class="card jumbotron p-0 eligible item">
@@ -224,7 +224,7 @@
                                 <h4><b>Last donate :</b> 8 months ago</h4>
                                 <h4><b>Location :</b>taltola, Bogura</h4>
                                 <h4><b>Contact :</b> <a href="tel: 01753698444" class="card-phone">01753698444</a> <h4>
-                                <small><a href="#" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
+                                <small><a href="profile/view_profile.html" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
                             </div>
                         </div>
                         <div class="card jumbotron p-0 eligible item">
@@ -237,7 +237,7 @@
                                 <h4><b>Last donate :</b> 8 months ago</h4>
                                 <h4><b>Location :</b>Betil, sirajganj</h4>
                                 <h4><b>Contact :</b> <a href="tel: 0186612115" class="card-phone">0186612115</a> <h4>
-                                <small><a href="#" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
+                                <small><a href="profile/view_profile.html" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
                             </div>
                         </div>
                         <div class="card jumbotron p-0 eligible item">
@@ -250,7 +250,7 @@
                                 <h4><b>Last donate :</b> 8 months ago</h4>
                                 <h4><b>Location :</b>Betil, sirajganj</h4>
                                 <h4><b>Contact :</b> <a href="tel: 0186612115" class="card-phone">0186612115</a> <h4>
-                                <small><a href="#" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
+                                <small><a href="profile/view_profile.html" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
                             </div>
                         </div>
                         <div class="card jumbotron p-0 eligible item">
@@ -263,7 +263,7 @@
                                 <h4><b>Last donate :</b> 8 months ago</h4>
                                 <h4><b>Location :</b>Betil, sirajganj</h4>
                                 <h4><b>Contact :</b> <a href="tel: 0186612115" class="card-phone">0186612115</a> <h4>
-                                <small><a href="#" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
+                                <small><a href="profile/view_profile.html" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
                             </div>
                         </div>
                         <div class="card jumbotron p-0 eligible item">
@@ -276,7 +276,7 @@
                                 <h4><b>Last donate :</b> 2 months ago</h4>
                                 <h4><b>Location :</b>Betil, sirajganj</h4>
                                 <h4><b>Contact :</b> <a href="tel: 0186612115" class="card-phone">0186612115</a> <h4>
-                                <small><a href="#" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
+                                <small><a href="profile/view_profile.html" class=" card-link">View profile <i class=" fa fa-angle-double-right text-red card-link-icon"></i></a></small>
                             </div>
                         </div>
                     </div>

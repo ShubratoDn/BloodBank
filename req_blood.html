@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request For Blood</title>
+    <!-- vendor style -->
+    <!-- normalize -->
+    <link rel="stylesheet" href="vendor/css/normalize.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Open+Sans&family=Tourney:wght@200&display=swap" rel="stylesheet">
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/css/font-awesome.min.css">
+    
+    <!-- custom style -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+    <link rel="stylesheet" href="resources/css/nav,title.css">
+    <link rel="stylesheet" href="resources/css/req_blood.css">
+</head>
+<body>
+
+    <nav class="navbar ">
+        <div class="container-fluid">
+            <a href="index.html" class="nav-logo col-lg-3">
+                <img src="resources/img/logo.png" alt="logo" class="logo">
+                <div class="logo-text">
+                    Blood Bank
+                </div>
+            </a>
+    </nav>
+
+    <section id="req_blood" class=" d-flex justify-content-center align-items-center">
+        <div class="container ">
+            <div class="req-form py-5 m-auto col-xl-4 col-lg-5 col-md-8 col-sm-10 col-12">
+                <h1 class="text-center">Request For Blood</h1>
+                <hr>
+                <!-- form starts here -->
+                <form action="#" method="post">
+                    
+                    <div class="input-div">
+                        <label for="full-name">
+                            <h4>Full Name</h4>
+                         </label>
+                        <div class="input-group">
+                            <div class="input-icon">
+                                <i class=" fa fa-user"></i>
+                            </div><input type="text" name="" id="full-name" placeholder="Enter Full Name">
+                        </div>    
+                    </div>                
+
+                   <div class="input-div">
+                        <label for="b_group">
+                            <h4>Blood Group</h4>
+                        </label>
+                        <div class="input-group">
+                            <div class="input-icon">
+                                <i class=" fa fa-tint"></i>
+                            </div>
+                            <select name="" id="b_group">
+                                <option value="">Blood Group</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+                   </div>
+
+                   <div class="input-div">
+                        <label for="quantity">
+                            <h4>Quantity of blood</h4>
+                        </label>
+                        <div class="input-group">
+                            <div class="input-icon">
+                                <i class=" fa fa-shopping-bag"></i>
+                            </div>
+                            <input type="number" name="" id="quantity" placeholder="Quantity; Ex: 1 bag">
+                            <h4>Bag</h4>
+                        </div>
+                   </div>
+
+                   <div class="input-div">
+                        <label for="time">
+                            <h4>You need blood within</h4>
+                        </label>
+                        <div class="input-group">
+                            <div class="input-icon">
+                                <i class=" fa fa-clock-o"></i>
+                            </div>
+                            <input type="number" name="" id="time" placeholder="Time; Ex: 8 hour">
+                            <select name="" id="b_group">
+                                <option value="Day">Day</option>
+                                <option value="Hour">hour</option>
+                            </select>
+                        </div>
+                   </div>
+                   
+
+                   <div class="input-div">
+                        <label for="location">
+                            <h4>Hospital Name</h4>
+                        </label>
+                        <div class="input-group">
+                            <div class="input-icon">
+                                <i class=" fa fa-map-marker"></i>
+                            </div>
+                            <input type="text" name="" id="location" placeholder="Where you need blood?">
+                        </div>
+                   </div>
+                    
+                   <input type="submit" name="submit" value="Request Now" class=" btn btn-primary btn-lg w-100">
+                </form>
+                <!-- form Ends -->
+            </div>
+        </div>
+    </section>
+
+       <!-- footer starts -->
+       <footer class="" id="footer"> 
+        <div class="container-md py-5">
+            <div class="row pt-5">
+                <!-- contact us -->
+                <div class="col-sm-4 p-3 mb-4">
+                    <h1>CONTACT US</h1>
+                    <p><i class=" fa fa-map-marker pr-3"></i><b>Headquerter : </b> Khwaja Yunus Ali Hospital, Enayetput, Sirajganj.</p>
+                    <p><i class=" fa fa-envelope pr-2"></i><b>Email : </b><a href="mailto: mycomputer44985@gmail.com" >mycomputer44985@gmail.com</a></p>
+                    <p><i class=" fa fa-phone pr-3"></i><b>Tel : </b><a href="tel: 01759458961" >01759458961</a></p>
+                </div>
+                <!-- services -->
+                <div class="col-sm-4 p-3 mb-4">
+                    <h1>Services</h1>
+                    <p><a href="#">Donate blood</a></p>
+                    <p><a href="#">Request blood</a></p>
+                    <p><a href="#">About Blood</a></p>
+                </div>
+                <!-- additional links -->
+                <div class="col-sm-4 p-3 mb-4">
+                    <h1>additional links</h1>
+                    <p><a href="#">About us</a></p>
+                    <p><a href="#">Terms and conditions</a></p>
+                    <p><a href="#">Privacy policy</a></p>
+                    <p><a href="#">Contact us</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end py-5">
+            <div class="container-md">
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-md-4 text-center text-md-left  mb-4">
+                        &copy; 2021 All Rights Reserved
+                    </div>                    
+                     <!-- social links -->
+                    <div class="col-md-4  social-links text-center mb-4">
+                        <i class=" fa fa-facebook"></i>
+                        <i class=" fa  fa-instagram"></i>
+                        <i class=" fa fa-twitter"></i>
+                    </div>
+                    <div class="col-md-4 text-md-right text-center mb-4">
+                        <p><b>Design by </b><span class=" text-red" style="cursor: pointer;">  Shubrato Debnath</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer Ends -->
+
+
+    <!-- javascript -->
+    <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/popper.min.js"></script>
+    <script src="vendor/js/html5shiv.min.js"></script>
+    <script src="vendor/js/respond.min.js"></script>
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <!-- animated headline js-->
+    <script src="vendor/js/animateHeader.js"></script>
+    <!-- data-aos-->
+    <script src="vendor/js/aos.js"></script>
+    <!-- owl carousel -->
+    <script src="vendor/js/owl.carousel.min.js"></script>
+    <!-- mixitup plugin for filter -->
+    <script src="vendor/js/mixitup.min.js"></script>
+
+
+    <!-- custom js -->
+    <script src="resources/js/main.js"></script>
+</body>
+</html>
